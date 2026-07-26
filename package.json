@@ -1,0 +1,33 @@
+{
+  "name": "pi-goal",
+  "version": "0.1.0",
+  "description": "Long-running autonomous goals for Pi.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Federico Cervelli <federicocervelli01@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Federicocervelli/pi-goal.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "goal"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
