@@ -1,6 +1,6 @@
 {
   "name": "pi-goal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Long-running autonomous goals for Pi.",
   "type": "module",
   "license": "MIT",
@@ -20,7 +20,8 @@
     ]
   },
   "scripts": {
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types index.test.ts"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*",
